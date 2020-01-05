@@ -1,0 +1,166 @@
+body
+{
+    background-color: darkcyan;
+    font-size: 54px;
+    /*font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;*/
+    margin: 0px;
+    cursor: none;
+}
+
+.Cursor
+{
+    position: absolute;
+    pointer-events: none;
+}
+
+.Container
+{
+    margin: 8px auto;
+}
+
+.Game
+{
+    display: grid;
+    margin: 0 auto;
+    width: 567px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.SubGame
+{
+    border-color: black;
+    position: relative;
+    margin: 0;
+    padding: 5px;
+    border: 1px black solid;
+    display: grid;
+    grid-template-columns: 33.34% 33.34% 33.34%;
+    grid-template-rows: 33.34% 33.34% 33.34%;
+}
+
+.square
+{
+    border-color: black;
+    background-color: white;
+    border-style: solid;
+    opacity: 85%;
+    padding: 25px;
+    margin: 3px;
+    transition: border-color 0.7s;
+    text-align: center;
+}
+
+.win_line
+{
+    position: absolute;
+    display: block;
+    background-color: gold;
+    margin: 21px;
+    padding: 0px;
+    pointer-events: none;
+    transition: all 0.01s, padding 1s;
+}
+
+.state_1
+{
+    padding: 9px 72px;
+    margin-top: 28px;
+    border: black solid 1px;
+}
+
+.state_2
+{
+    padding: 82px 9px;
+    margin-left: 24.5px;
+    border: black solid 1px;
+}
+
+.state_3
+{
+    transform: rotate(-41.93deg);
+    margin:-2px 83px;
+    padding: 103px 9px;
+    border: black solid 1px;
+}
+
+.state_4
+{
+    padding: 82px 9px;
+    margin-left: 83.5px;
+    border: black solid 1px;
+}
+
+.state_5
+{
+    transform: rotate(41.93deg);
+    margin:-2px 83px;
+    padding: 103px 9px;
+    border: black solid 1px;
+}
+
+.state_6
+{
+    padding: 82px 9px;
+    margin-left: 142.25px;
+    border: black solid 1px;
+}
+
+.state_7
+{
+    padding: 9px 72px;
+    margin-top: 92px;
+    border: black solid 1px;
+}
+
+.state_8
+{
+    padding: 9px 72px;
+    margin-top: 158px;
+    border: black solid 1px;
+}
+
+.win_letter
+{
+    position: absolute;
+    display:block;
+    opacity: 0%;
+    pointer-events: none;
+    text-align: center;
+    font-size: 200px;
+    margin-top: -13px;
+    margin-left: 22px;
+    color: darkcyan;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    transition: all 1s;
+    transition-delay: 1s;
+}
+
+.visible
+{
+    opacity: 100;
+}
+
+.Win_text
+{
+    display: none;
+    font-size: 200px;
+}
+
+.valid
+{
+    border-color: gold;
+}
+
+.X,.O
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.valid:hover
+{
+    padding: 28px;
+    margin: 0;
+    opacity: 100%;
+}
